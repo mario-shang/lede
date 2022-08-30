@@ -69,9 +69,16 @@ jobs:
 
           cat >> .config <<EOF
           CONFIG_TARGET_ramips=y
-          CONFIG_TARGET_ramips_mt7620=y
-          CONFIG_TARGET_ramips_mt7620_DEVICE_xiaomi_miwifi-mini=y
+          CONFIG_TARGET_ramips_mt7621=y
+          CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mi-router-4a-gigabit=y
           CONFIG_PACKAGE_bash=y
+          # CONFIG_PACKAGE_kmod-mt7603 is not set
+          CONFIG_PACKAGE_kmod-nls-base=y
+          CONFIG_PACKAGE_kmod-rt2x00-lib=y
+          CONFIG_PACKAGE_kmod-usb-core=y
+          CONFIG_PACKAGE_kmod-usb-ehci=y
+          CONFIG_PACKAGE_kmod-usb-ohci=y
+          CONFIG_PACKAGE_kmod-usb2=y
           CONFIG_PACKAGE_libmaxminddb=y
           CONFIG_PACKAGE_libmbedtls=y
           CONFIG_PACKAGE_libncurses=y
